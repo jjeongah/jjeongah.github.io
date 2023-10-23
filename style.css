@@ -3,8 +3,15 @@ body {
 }
 
 #title-name {
-    font-family: 'Roboto', sans-serif; 
+    font-size: 40px; /* Adjust the size as needed */
+    font-weight: bold; /* or font-weight: 700; to make it thicker */
 }
+
+#link {
+    color: #4563b0; 
+    text-decoration: none;
+}
+
 
 header ul {
     list-style: none;
@@ -16,6 +23,13 @@ header li {
     display: inline;
     margin-right: 20px; /* Adjust the spacing as needed */
 }
+
+/* Style the links in your navigation */
+header ul li a {
+    color: #000; /* Set the desired link color (e.g., black) */
+    text-decoration: none; /* Remove underlines from the links */
+}
+
 
 /* Style the profile image */
 #profile-image {
@@ -30,12 +44,12 @@ header li {
 #content {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding-top: 20%;
 }
 
 .left-section {
     flex: 1;
-    padding: 10px;
+    padding-left: 10%;
 }
 
 img {
@@ -46,7 +60,7 @@ img {
 
 .right-section {
     flex: 2;
-    padding: 10px;
+    padding-right: 10%;
 }
 
 .social-links a {
