@@ -53,7 +53,10 @@
         }
 
         function showCV() {
-            window.open("files/Resume_Jeongah.pdf", "_blank");
+            var link = document.createElement('a');
+            link.href = "files/Resume_Jeongah.pdf"; // Replace with the actual URL of your CV
+            link.download = "files/Resume_Jeongah.pdf"; // Replace with the desired filename
+            link.click();
         }
     </script>
 </body>
