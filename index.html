@@ -3,38 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeongah Lee</title>
     <link rel="stylesheet" href="style.css">
+    <title>Jeongah Lee</title>
 </head>
-
-
 <body>
-    <header class="header">
-        <div class="container">
+    <header>
+        <div class="left">
             <h1>Jeongah Lee</h1>
-            <p>Jeongah Lee</p>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#" onclick="showAbout()">About</a></li>
+                <li><a href="#" onclick="showPublications()">Publications</a></li>
+                <li><a href="#" onclick="showProjects()">Projects</a></li>
+                <li><a href="#" onclick="showCV()">CV</a></li>
+            </ul>
         </div>
     </header>
-
-    <section class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <main>
+        <div id="content">
+            <!-- 기본 내용 -->
+            <h2>About</h2>
+            <p>이곳에 "About" 페이지 내용을 추가하세요.</p>
         </div>
-    </section>
+    </main>
+    <footer>
+        <!-- 푸터 내용을 이곳에 추가하세요 -->
+    </footer>
 
-    <section class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <!-- Your project cards or content go here -->
-        </div>
-    </section>
+    <script>
+        function showAbout() {
+            document.getElementById("content").innerHTML = "<h2>About</h2><p>이곳에 'About' 페이지 내용을 추가하세요.</p>";
+        }
 
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: jeongahs2@g.skku.edu.com</p>
-        </div>
-    </section>
+        function showPublications() {
+            window.location.href = "https://jjeongah.github.io/publications";
+        }
+
+        function showProjects() {
+            window.location.href = "https://jjeongah.github.io/projects";
+        }
+
+        function showCV() {
+            window.open("your_cv.pdf", "_blank");
+        }
+    </script>
 </body>
 </html>
