@@ -44,7 +44,7 @@ header ul li a {
 #content {
     display: flex;
     align-items: center;
-    padding-top: 20%;
+    padding-top: 5%;
 }
 
 .left-section {
@@ -66,4 +66,13 @@ img {
 .social-links a {
     text-decoration: none;
     margin-right: 10px;
+}
+
+/* Center the footer vertically and position it at the bottom of the page */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%; /* Optional: Add padding to the footer for spacing */
 }
