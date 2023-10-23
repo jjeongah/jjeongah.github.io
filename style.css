@@ -76,6 +76,37 @@ img {
     margin-right: 10px;
 }
 
+.news-section {
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 70%; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    overflow: auto; /* Add a scroll bar for overflow content */
+}
+
+.timeline {
+    padding: 10px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    display: flex; /* Create a two-column layout */
+    justify-content: space-between; /* Add space between columns */
+}
+
+.left, .right {
+    width: 48%; /* Adjust the column width as needed */
+}
+
+.time {
+    font-weight: bold;
+}
+
+.news {
+    margin-top: 5px;
+}
+
+
 /* Center the footer vertically and position it at the bottom of the page */
 #footer {
     position: absolute;
