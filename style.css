@@ -12,6 +12,14 @@ body {
     text-decoration: none;
 }
 
+#personal-link {
+    color: #282936; 
+    text-decoration: none;
+}
+
+header {
+    padding-top: 1%;
+}
 
 header ul {
     list-style: none;
@@ -69,10 +77,23 @@ img {
 }
 
 /* Center the footer vertically and position it at the bottom of the page */
-footer {
+#footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
     padding-bottom: 5%; /* Optional: Add padding to the footer for spacing */
+}
+
+#footer a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* Change the link color as needed */
+    margin-right: 10px; /* Add space between links */
+}
+
+#icon-img {
+    margin-right: 5px; /* Add space between the image and text */
+    margin-left: 15px; 
 }

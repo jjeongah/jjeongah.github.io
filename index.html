@@ -3,57 +3,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Jeongah Lee</title>
-</head>
-<body>
-    <header>
-            <ul style="text-align: right;">
-                <li><a href="#" onclick="showAbout()">About</a></li>
-                <li><a href="#" onclick="showPublications()">Publications</a></li>
-                <li><a href="#" onclick="showProjects()">Projects</a></li>
-                <li><a href="#" onclick="showCV()">CV</a></li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <div id="content">
-            <div class="left-section">
-                <img id="profile-image" src="files/profile_image.jpg" alt="Your Photo">
-            </div>
-            <div class="right-section">
-                <h1 id="title-name">Jeongah Lee</h1>
-                <h4>Senior student @ SKKU Computer Science and Engineering</h4>
-                
-                <p>Hi! I am a senior undergraduate student at 
-                    <a href="https://cs.skku.edu/en/" target="_blank" id="link">Sungkyunkwan University, Department of Computer Science and Engineering</a>.
-                </p>
-                <p>I am interested in <strong>Artificial Intelligence (AI)</strong> and <strong>Human-Computer Interaction (HCI)</strong>.</p>
-                <p> 
-                    In 2021, as an undergraduate researcher at the 
-                    <a href="http://iotlab.skku.edu/" id="link">Internet of Things (IoT) Laboratory</a>, 
-                    advised by <a href="http://iotlab.skku.edu/people-jaehoon-jeong.php" id="link">Prof. Jaehoon Paul Jeong</a>,
-                    I honed my research skills, which led to a publication in the IEEE Network magazine.
-                </p>
-                <p>In spring 2022, I completed an exchange program at 
-                    <a href="https://www.ece.utexas.edu/" id="link">The University of Texas at Austin, Department of Electrical and Computer Engineering</a>.
-                </p>
 
+    <!--Head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Jeongah Lee</title>
+    </head>
+
+    <!--Body-->
+    <body>
+        <header id="menu-bar">
+                <ul style="text-align: right;">
+                    <li><a href="#" onclick="showAbout()">About</a></li>
+                    <li><a href="#" onclick="showPublications()">Publications</a></li>
+                    <li><a href="#" onclick="showProjects()">Projects</a></li>
+                    <li><a href="#" onclick="showCV()">CV</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main id="introduction">
+            <div id="content">
+                <div class="left-section">
+                    <img id="profile-image" src="files/profile_image.jpg" alt="Your Photo">
+                </div>
+                <div class="right-section">
+                    <h1 id="title-name">Jeongah Lee</h1>
+                    <h4>Senior student @ SKKU Computer Science and Engineering</h4>
                     
+                    <p>Hi! I am a senior undergraduate student at 
+                        <a href="https://cs.skku.edu/en/" target="_blank" id="link">Sungkyunkwan University, Department of Computer Science and Engineering</a>.
+                    </p>
+                    <p>I am interested in <strong>Artificial Intelligence (AI)</strong> and <strong>Human-Computer Interaction (HCI)</strong>.</p>
+                    <p> 
+                        In 2021, as an undergraduate researcher at the 
+                        <a href="http://iotlab.skku.edu/" id="link">Internet of Things (IoT) Laboratory</a>, 
+                        advised by <a href="http://iotlab.skku.edu/people-jaehoon-jeong.php" id="link">Prof. Jaehoon Paul Jeong</a>,
+                        I honed my research skills, which led to a publication in the IEEE Network magazine.
+                    </p>
+                    <p>In spring 2022, I completed an exchange program at 
+                        <a href="https://www.ece.utexas.edu/" id="link">The University of Texas at Austin, Department of Electrical and Computer Engineering</a>.
+                    </p>
+
+                        
+                    </div>
                 </div>
             </div>
-        </div>
+            
+        </main> <!--Main page done-->
+
         
-    </main>
-    <footer>
-        <a href="mailto:jeongahs2@g.skku.edu">Mail</a> |
-        <a href="https://github.com/jjeongah">GitHub</a> |
-        <a href="https://www.linkedin.com/in/jeongah-jasmine-lee/">LinkedIn</a>
-    </footer>
+        <div id="footer">    
+            <a href="mailto:jeongahs2@g.skku.edu" id="personal-link">
+                <img src="files/email.png" id="icon-img" alt="Email" width="20" height="20">
+                <h4>Mail</h4>
+            </a> 
+            |
+            <a href="https://github.com/jjeongah"  id="personal-link">
+                <img src="files/github.png" id="icon-img" alt="Email" width="20" height="20">
+                <h4>GitHub</h4>
+            </a> 
+            |
+            <a href="https://www.linkedin.com/in/jeongah-jasmine-lee/" id="personal-link">
+                <img src="files/linkedin.png" id="icon-img" alt="Email" width="20" height="20"> 
+                <h4>LinkedIn</h4>
+            </a>
+        </div>
 
     <script>
         function showAbout() {
