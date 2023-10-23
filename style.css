@@ -84,12 +84,32 @@ img {
 
 
 /* 🔥News Section🔥 */
+#news-section{
+    padding-left: 10%;
+    padding-top: 2%;
+}
 
-#news-section {
+#news-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#news-title {
+    flex: 1; /* Allow the title to take up remaining space */
+    margin: 0; /* Remove default margin */
+}
+
+.symbol-explanation {
+    margin-left: 0px; /* Add space between the title and symbol explanation */
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+
+#news-subsection {
     position: absolute;
-    margin-top: 20px;
-    margin-left: 10%;
-    width: 80%; /* Adjust the width as needed */
+    width: 85%; /* Adjust the width as needed */
     max-height: 300px; /* Adjust the height as needed */
     overflow-y: auto;
 }
@@ -113,6 +133,12 @@ img {
     margin-bottom: 10px;
 }
 
+.timeline-item.with-line {
+    border-bottom: 1px solid #edeef5; /* Add a 1px solid gray line at the bottom of the element */
+    padding-bottom: 10px; /* Adjust the spacing as needed */
+}
+
+
 .left {
     width: 300px; /* Set the width of the left column to 100px */
     font-weight: bold;
@@ -129,8 +155,14 @@ img {
 
 #google-icon {
     font-size: 20px; /* Adjust the size as needed */
-    vertical-align: middle;
 }
+
+.material-symbols-outlined {
+    float: left; /* Span을 왼쪽으로 띄우기 */
+    margin-right: 10px; /* Span과 텍스트 사이의 간격 조절 (원하는 만큼) */
+}
+
+
 
 
 
@@ -159,6 +191,7 @@ img {
     display: inline;
 }
 
+
 #icon-img {
     margin-right: 5px; /* Add space between the image and text */
     margin-left: 15px;
@@ -174,7 +207,7 @@ img {
     text-align: center;
     padding: 5px;
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     width: 100%;
     height: 30px;
 }
