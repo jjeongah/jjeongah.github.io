@@ -1,0 +1,33 @@
+/* 🔥Overall Design🔥 */
+body {
+    font-family: 'Roboto', sans-serif; /* Use the font of your choice */
+}
+
+/* 🔥Menu Bar Section🔥 */
+#menu-bar {
+    border-bottom: 0.1px solid #d8dae6; /* Add a 1px solid black border at the bottom */
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+header {
+    padding-top: 1%;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin-right: 20px; /* Adjust the spacing as needed */
+}
+
+
+header ul li a {
+    color: #000; /* Set the desired link color (e.g., black) */
+    text-decoration: none; /* Remove underlines from the links */
+}
+
