@@ -1,7 +1,6 @@
 /* 🔥Overall Design🔥 */
 body {
     font-family: 'Roboto', sans-serif; /* Use the font of your choice */
-    overflow-y: auto;
 }
 
 #title-name {
@@ -46,38 +45,25 @@ header ul li a {
     text-decoration: none; /* Remove underlines from the links */
 }
 
-
-/* 🔥Paper content Section🔥 */
+/* 🔥Projects content Section🔥 */
 .main-content {
     text-align: center;
 }
 
-.paper {
-    margin: 20px;
-    padding: 20px;
-    line-height: 1.5;
-}
-
-.abstract {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    line-height: 1.5;
-}
-
-.buttons {
-    border: 1px solid #ddd;
-    line-height: 1.5;
-    text-decoration: none; /* Remove underlines from the links */
-    color: #4b4c52;
-    margin: 10px;
-    padding: 10px;
-    background-color: #edeffa;
-    border-radius: 15%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-}
-
 /* 🔥Media Section🔥 */
+#media-section {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 40px;
+    border: 1px solid #ddd;
+    line-height: 1.5;
+}
+
+#personal-link {
+    color: #282936; 
+    text-decoration: none;
+}
 #media-section {
     position: fixed;
     width: 100%;
@@ -88,19 +74,6 @@ header ul li a {
     line-height: 1.5;
     background-color: white;
 }
-#personal-link {
-    color: #282936; 
-    text-decoration: none;
-}
-
-#media-section a {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    color: #000; /* Change the link color as needed */
-    margin-right: 10px; /* Add space between links */
-}
-
 #media-section h4 {
     display: inline;
 }
