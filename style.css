@@ -1,5 +1,9 @@
 body {
-    font-family: 'Arial', sans-serif; /* Use the font of your choice */
+    font-family: 'Roboto', sans-serif; /* Use the font of your choice */
+}
+
+#title-name {
+    font-family: 'Roboto', sans-serif; 
 }
 
 header ul {
@@ -16,8 +20,8 @@ header li {
 /* Style the profile image */
 #profile-image {
     border-radius: 3%; /* Makes the image round */
-    width: 300px; /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
+    width: 75%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
     object-fit: cover; /* Ensures the image covers the entire space, cropping if necessary */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
