@@ -89,6 +89,7 @@ img {
 #news-section{
     padding-left: 10%;
     padding-top: 2%;
+    margin-bottom: 1000px;
 }
 
 #news-bar {
@@ -118,6 +119,7 @@ img {
     width: 85%; /* Adjust the width as needed */
     max-height: 300px; /* Adjust the height as needed */
     overflow-y: auto;
+    
 }
 
 .keyword {

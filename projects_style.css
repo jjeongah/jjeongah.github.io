@@ -6,6 +6,7 @@ body {
 #title-name {
     font-size: 40px; /* Adjust the size as needed */
     font-weight: bold; /* or font-weight: 700; to make it thicker */
+    text-align: center;
 }
 
 /* 🔥Menu Bar Section🔥 */
@@ -45,25 +46,56 @@ header ul li a {
     text-decoration: none; /* Remove underlines from the links */
 }
 
-/* 🔥Projects content Section🔥 */
+/* 🔥🔥🔥Projects content Section🔥🔥🔥 */
 .main-content {
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    grid-gap: 20px; /* Adjust the gap as needed */
 }
+
+.project {
+    border: none; /* Remove the border */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    transition: box-shadow 0.3s; /* Add a smooth transition for the box shadow */
+    height:400px;
+}
+
+.project:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+}
+
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-title {
+    font-weight: bold;
+}
+
+.project-details {
+    display: none; /* Hide the detailed information by default */
+}
+
+/* Style for hover effect */
+.project:hover {
+    background-color: #e0e0e0; /* Change the background color on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr; /* Change to a single column on smaller screens */
+    }
+}
+
+
 
 /* 🔥Media Section🔥 */
-#media-section {
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    bottom: 40px;
-    border: 1px solid #ddd;
-    line-height: 1.5;
-}
-
-#personal-link {
-    color: #282936; 
-    text-decoration: none;
-}
 #media-section {
     position: fixed;
     width: 100%;
@@ -74,6 +106,19 @@ header ul li a {
     line-height: 1.5;
     background-color: white;
 }
+#personal-link {
+    color: #282936; 
+    text-decoration: none;
+}
+
+#media-section a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* Change the link color as needed */
+    margin-right: 10px; /* Add space between links */
+}
+
 #media-section h4 {
     display: inline;
 }

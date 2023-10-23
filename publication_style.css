@@ -50,6 +50,7 @@ header ul li a {
 /* 🔥Paper content Section🔥 */
 .main-content {
     text-align: center;
+    margin-bottom: 1000px;
 }
 
 .paper {
@@ -77,7 +78,7 @@ header ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
-/* 🔥Media Section🔥 */
+/* 🔥🔥🔥 Media Section 🔥🔥🔥 */
 #media-section {
     position: fixed;
     width: 100%;
