@@ -19,7 +19,7 @@
     <main>
         <div id="content">
             <div class="left-section">
-                <img src="your_photo.jpg" alt="Your Photo">
+                <img id="profile-image" src="files/profile_image.jpg" alt="Your Photo">
             </div>
             <div class="right-section">
                 <h2>Jeongah Lee</h2>
@@ -53,10 +53,7 @@
         }
 
         function showCV() {
-            var link = document.createElement('a');
-            link.href = "files/Resume_Jeongah.pdf"; // Replace with the actual URL of your CV
-            link.download = "files/Resume_Jeongah.pdf"; // Replace with the desired filename
-            link.click();
+            window.location.href = "https://drive.google.com/file/d/1ViAhyEpV-rP8_7GoUuzFvA7GLaSN0T8-/view?usp=share_link";
         }
     </script>
 </body>
