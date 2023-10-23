@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Jeongah Lee</title>
 </head>
 <body>
     <header>
-        <div class="left">
-            <h1>Jeongah Lee</h1>
-        </div>
-        <div class="right">
-            <ul>
+            <ul style="text-align: right;">
                 <li><a href="#" onclick="showAbout()">About</a></li>
                 <li><a href="#" onclick="showPublications()">Publications</a></li>
                 <li><a href="#" onclick="showProjects()">Projects</a></li>
@@ -21,12 +18,22 @@
     </header>
     <main>
         <div id="content">
-            <!-- 기본 내용 -->
-            <h2>Jeongah Lee</h2>
-            <p>I am a senior undergraduate student majoring computer science and engineering in Sungkyunkwan university.
-
-            </p>
+            <div class="left-section">
+                <img src="your_photo.jpg" alt="Your Photo">
+            </div>
+            <div class="right-section">
+                <h2>Jeongah Lee</h2>
+                <p>I am a senior undergraduate student majoring in Computer Science and Engineering at Sungkyunkwan University.</p>
+                <p>This is your second paragraph with additional information about yourself.</p>
+                <p>And here's the third paragraph with more details or any other information you want to include.</p>
+                <div class="social-links">
+                    <a href="your_main_link">Main</a> |
+                    <a href="your_github_link">GitHub</a> |
+                    <a href="your_linkedin_link">LinkedIn</a>
+                </div>
+            </div>
         </div>
+        
     </main>
     <footer>
         <!-- 푸터 내용을 이곳에 추가하세요 -->
@@ -46,7 +53,7 @@
         }
 
         function showCV() {
-            window.open("your_cv.pdf", "_blank");
+            window.open("files/Resume_Jeongah.pdf", "_blank");
         }
     </script>
 </body>
