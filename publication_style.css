@@ -3,12 +3,26 @@ body {
     font-family: 'Roboto', sans-serif; /* Use the font of your choice */
 }
 
+#title-name {
+    font-size: 40px; /* Adjust the size as needed */
+    font-weight: bold; /* or font-weight: 700; to make it thicker */
+}
+
 /* 🔥Menu Bar Section🔥 */
+
 #menu-bar {
     border-bottom: 0.1px solid #d8dae6; /* Add a 1px solid black border at the bottom */
     padding-bottom: 10px;
     width: 100%;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Push items to opposite ends of the container */
+    align-items: center; /* Vertically align items in the middle */
 }
+
+#menu-bar h2 {
+    margin: 0; /* Remove default margin */
+}
+
 
 header {
     padding-top: 1%;
@@ -29,5 +43,22 @@ header li {
 header ul li a {
     color: #000; /* Set the desired link color (e.g., black) */
     text-decoration: none; /* Remove underlines from the links */
+}
+
+.main-content {
+    text-align: center;
+}
+
+.paper {
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.abstract {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    line-height: 1.5;
 }
 
