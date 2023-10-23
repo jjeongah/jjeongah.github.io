@@ -6,6 +6,7 @@
 body {
     font-family: 'Roboto', sans-serif; /* Use the font of your choice */
     line-height: 1.2;
+    font-size: 14px;
 }
 
 /* 🔥Menu Bar Section🔥 */
@@ -94,19 +95,21 @@ img {
     display: flex;
     align-items: center;
     padding: 10px;
+    margin-right: 3%;
 }
 
 #news-title {
     flex: 1; /* Allow the title to take up remaining space */
-    margin: 0; /* Remove default margin */
+    margin-right: 10%;
 }
 
 #google-icon-small{
-    font-size: 15px; /* Adjust the size as needed */
+    font-size: 13px; /* Adjust the size as needed */
 }
 .symbol-explanation {
     margin-right: 10px;
-    font-size: 13px;
+    margin-left: -5px;
+    font-size: 12px;
 }
 
 
@@ -157,7 +160,7 @@ img {
 }
 
 #google-icon {
-    font-size: 20px; /* Adjust the size as needed */
+    font-size: 18px; /* Adjust the size as needed */
 }
 
 .material-symbols-outlined {
@@ -171,10 +174,12 @@ img {
 
 /* 🔥Media Section🔥 */
 #media-section {
-    position: absolute;
+    position: fixed;
     width: 100%;
     text-align: center;
-    margin-top: 400px;
+    bottom: 40px;
+    border: 1px solid #ddd;
+    line-height: 1.5;
 }
 
 #personal-link {
@@ -198,6 +203,8 @@ img {
 #icon-img {
     margin-right: 5px; /* Add space between the image and text */
     margin-left: 15px;
+    width: 18px;
+    height: 18px;
 }
 
 
