@@ -16,6 +16,15 @@ body {
     width: 100%;
 }
 
+#menu-bar li{
+    padding:10px;
+}
+
+#menu-bar li:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+}
+
+
 header {
     padding-top: 1%;
 }
@@ -191,16 +200,20 @@ img {
     text-decoration: none;
 }
 
+#personal-link:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+}
+
 #media-section a {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
     color: #000; /* Change the link color as needed */
-    margin-right: 10px; /* Add space between links */
 }
 
 #media-section h4 {
     display: inline;
+    margin-right: 10px; /* Add space between links */
 }
 
 
