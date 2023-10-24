@@ -235,7 +235,9 @@ img {
 }
 
 .project-title {
-    margin-top: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10%;
     font-weight: bold; 
     color: #3a4487;
     align-items: center;
@@ -249,7 +251,7 @@ img {
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
     transition: box-shadow 0.3s; /* Add a smooth transition for the box shadow */
-    height:400px;
+    height:auto;
     width: 95%;
 }
 
@@ -260,6 +262,7 @@ img {
 
 .project img {
     height: auto;
+    max-width: 100%;
 }
 
 
