@@ -26,7 +26,7 @@
     <h1 id="title-name">Projects</h1>
     <div class="main-content">
 
-        <div class="project" id="project1" onclick="navigateToProject('project1')">
+        <div class="project" id="project1" onclick="navigateToProject('proj1')">
             <img src="files/project/STS.png" alt="Project 1 Thumbnail">
             <div class="project-title">STS</div>
             <p>Brief information about Project 1.</p>
@@ -36,7 +36,7 @@
             </div>
         </div>
     
-        <div class="project" id="project2" onclick="navigateToProject('project2')">
+        <div class="project" id="project2">
             <img src="files/project/RE.png" alt="Project 2 Thumbnail">
             <div class="project-title">RE</div>
             <p>Brief information about Project 2.</p>
@@ -110,15 +110,6 @@
         <div>&copy; 2023 Jeongah Lee. All Rights Reserved.</div>
     </div>
 
-    <script src="script.js"></script>
-    <script>
-        // JavaScript 함수를 사용하여 프로젝트를 클릭하면 URL을 변경합니다.
-        function navigateToProject(projectId) {
-            // projectId를 기반으로 URL을 생성합니다.
-            var newUrl = "https://jjeongah.github.io/" + projectId;
-            // URL을 변경하여 페이지를 이동합니다.
-            window.location.href = newUrl;
-        }
-    </script>
+    <script src="project_script.js"></script>
 </body>
 </html>
