@@ -249,8 +249,7 @@ img {
     border: none; /* Remove the border */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
     transition: box-shadow 0.3s; /* Add a smooth transition for the box shadow */
-    height:auto;
-    width: 95%;
+    height:100%;
 }
 
 .project:hover {
@@ -269,7 +268,9 @@ img {
 }
 
 .project-description{
-    margin-bottom: 10px;
+    height: 20%;
+    margin-bottom: 10%;
+    padding: 10%;
 }
 
 
