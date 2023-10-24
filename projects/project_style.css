@@ -1,12 +1,9 @@
 /* 🔥Overall Design🔥 */
 body {
     font-family: 'Roboto', sans-serif; /* Use the font of your choice */
-}
-
-#title-name {
-    font-size: 40px; /* Adjust the size as needed */
-    font-weight: bold; /* or font-weight: 700; to make it thicker */
-    text-align: center;
+    line-height: 1.2;
+    font-size: 14px;
+    overflow-y: auto;
 }
 
 /* 🔥Menu Bar Section🔥 */
@@ -20,8 +17,8 @@ body {
     padding:10px;
 }
 
-#menu-bar li:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+#menu-bar ul li a:hover {
+    color: #7482db; /* Change the color to blue when hovering */
 }
 
 header {
@@ -46,6 +43,12 @@ header ul li a {
 }
 
 
+header ul li a {
+    color: #000; /* Set the desired link color (e.g., black) */
+    text-decoration: none; /* Remove underlines from the links */
+}
+
+
 /* 🔥🔥🔥Main content Section🔥🔥🔥 */
 .main-content {
     text-align: center;
@@ -54,19 +57,63 @@ header ul li a {
 }
 
 
-
 .buttons {
     border: 1px solid #ddd;
     line-height: 1.5;
     text-decoration: none; /* Remove underlines from the links */
     color: #4b4c52;
-    margin: 10px;
     padding: 10px;
     background-color: #edeffa;
     border-radius: 15%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
+.buttons:hover {
+    background-color: #c5c6d1; /* Change the background color on hover */
+    color: #edeffa; /* Change the text color on hover */
+}
+
+
+/* 🔥[Common] Media Section🔥 */
+#media-section {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    bottom: 40px;
+    border: 1px solid #ddd;
+    line-height: 1.5;
+    background-color: white;
+}
+
+#personal-link {
+    color: #282936; 
+    text-decoration: none;
+}
+
+#personal-link:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+}
+
+#media-section a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* Change the link color as needed */
+}
+
+#media-section h4 {
+    display: inline;
+    margin-right: 10px; /* Add space between links */
+}
+
+
+#icon-img {
+    margin-right: 5px; /* Add space between the image and text */
+    margin-left: 15px;
+    width: 18px;
+    height: 18px;
+}
 
 
 

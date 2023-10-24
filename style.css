@@ -212,7 +212,10 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
-
+.buttons:hover {
+    background-color: #c5c6d1; /* Change the background color on hover */
+    color: #edeffa; /* Change the text color on hover */
+}
 
 /* 🔥 [Projects page] Projects content Section🔥🔥🔥 */
 .projects-main-content {
@@ -254,6 +257,7 @@ img {
 .project:hover {
     background-color: #e0e0e0; /* Change the background color on hover */
 }
+
 
 
 /* 🔥[Common] Media Section🔥 */
