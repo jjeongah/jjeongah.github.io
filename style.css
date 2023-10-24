@@ -228,51 +228,50 @@ img {
 .projects-grid {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
-    grid-gap: 20px; /* Adjust the gap as needed */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
     margin-right: 5%;
     margin-left: 5%;
 }
-
 .project-title {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10%;
     font-weight: bold; 
     color: #3a4487;
-    align-items: center;
     text-align: center;
     height: 15%;
 }
 
 .project {
-    border: none; /* Remove the border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-    transition: box-shadow 0.3s; /* Add a smooth transition for the box shadow */
-    height:100%;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    height: 100%;
 }
 
-.project:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+.project-content {
+    height: 100%; /* Ensure all content is contained within the project */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 
 .project img {
     height: auto;
+    max-height: 40%; /* Set a maximum height for the image */
 }
 
+.project-description {
+    height: 45%; /* Set the height for the description */
+    padding: 10px;
+    overflow: hidden; /* Add overflow to handle long descriptions */
+    text-overflow: ellipsis; /* Display ellipsis for overflowing text */
+}
 
-/* Style for hover effect */
 .project:hover {
-    background-color: #e0e0e0; /* Change the background color on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #e0e0e0;
 }
 
-.project-description{
-    height: 20%;
-    margin-bottom: 10%;
-    padding: 10%;
-    display: flex;
-}
+
 
 
 
