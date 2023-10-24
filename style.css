@@ -247,8 +247,6 @@ img {
 
 .project {
     border: none; /* Remove the border */
-    margin: 5px;
-    padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
     transition: box-shadow 0.3s; /* Add a smooth transition for the box shadow */
     height:auto;
@@ -262,13 +260,16 @@ img {
 
 .project img {
     height: auto;
-    max-width: 100%;
 }
 
 
 /* Style for hover effect */
 .project:hover {
     background-color: #e0e0e0; /* Change the background color on hover */
+}
+
+.project-description{
+    margin-bottom: 10px;
 }
 
 
