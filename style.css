@@ -255,6 +255,10 @@ img {
     justify-content: space-between;
 }
 
+.project img {
+    max-height: 60%; /* Set a maximum height for the image */
+}
+
 .project-description {
     height: 45%; /* Set the height for the description */
     padding: 10px;
