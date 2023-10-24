@@ -69,14 +69,14 @@ header ul li a {
 /* 🔥Each pages🔥 */
 
 #long-explanation{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 50px;
 }
 
 #explanation-paragraph {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     line-height: 1.5;
 }
 
@@ -85,7 +85,7 @@ header ul li a {
 }
 
 #table {
-    width: 80%;
+    width: 200px;
 }
 
 .buttons {
