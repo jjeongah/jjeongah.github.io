@@ -7,6 +7,7 @@ body {
     font-family: 'Roboto', sans-serif; /* Use the font of your choice */
     line-height: 1.2;
     font-size: 14px;
+    overflow-y: auto;
 }
 
 /* 🔥Menu Bar Section🔥 */
@@ -20,10 +21,9 @@ body {
     padding:10px;
 }
 
-#menu-bar li:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+#menu-bar ul li a:hover {
+    color: #7482db; /* Change the color to blue when hovering */
 }
-
 
 header {
     padding-top: 1%;
@@ -179,6 +179,38 @@ img {
     margin-right: 10px; /* Span과 텍스트 사이의 간격 조절 (원하는 만큼) */
 }
 
+
+/* 🔥Paper content Section🔥 */
+.main-content {
+    text-align: center;
+    margin-bottom: 500px;
+}
+
+.paper {
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+
+.abstract {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    line-height: 1.5;
+}
+
+.buttons {
+    border: 1px solid #ddd;
+    line-height: 1.5;
+    text-decoration: none; /* Remove underlines from the links */
+    color: #4b4c52;
+    margin: 10px;
+    padding: 10px;
+    background-color: #edeffa;
+    border-radius: 15%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
 
 
 
