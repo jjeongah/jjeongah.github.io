@@ -256,8 +256,7 @@ img {
 }
 
 .project img {
-    max-height: 30%;
-    max-height: 30%; /* Set a maximum height for the image */
+    max-height: 70%; /* Set a maximum height for the image */
 }
 
 .project-description {
