@@ -50,6 +50,11 @@ header ul li a {
 
 
 /* 🔥[Main page] Introduction Section🔥 */
+#my-name {
+    font-size: auto; /* Adjust the size as needed */
+    font-weight: bold; /* or font-weight: 700; to make it thicker */
+}
+
 #title-name {
     font-size: 40px; /* Adjust the size as needed */
     font-weight: bold; /* or font-weight: 700; to make it thicker */
@@ -96,12 +101,14 @@ img {
 
 /* 🔥[Main page] News Section🔥 */
 #news-section{
+    width: auto;
     padding-left: 10%;
     padding-top: 2%;
     margin-bottom: 500px;
 }
 
 #news-bar {
+    width: auto;
     display: flex;
     align-items: center;
     padding: 10px;

@@ -12,8 +12,9 @@ function showProjects() {
 }
 
 function showCV() {
-    window.location.href = "https://drive.google.com/file/d/1ViAhyEpV-rP8_7GoUuzFvA7GLaSN0T8-/view?usp=share_link";
+    window.open("files/Resume_Jeongah.pdf");
 }
+
 
 function navigateToProject(projectId) {
     // Construct the URL based on the projectId
