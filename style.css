@@ -271,6 +271,7 @@ img {
     height: 20%;
     margin-bottom: 10%;
     padding: 10%;
+    display: flex;
 }
 
 
