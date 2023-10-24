@@ -28,20 +28,54 @@
 
         <div class="main-content">
             <h1 id="title-name">Relation Extraction(RE)</h1>
-            <div>
-                <a class="buttons" href="https://github.com/jjeongah/Relation_Extraction" target="_blank">Github</a>
-            </div>
-                    <h4 class="short-explanation">Natural Language Processing (NLP) task that measures the similarity between multiple sentences and provides a linear numerical representation of their similarity</h4>
-                    <div class="long-explanation">
-                        This project handles the Semantic Text Similarity(STS) task, which provides a linear numerical measure of similarity for multiple sentences.<br>
-                        In this project, two sentences are input, and a model is constructed to measure how semantically similar these pairs of sentences are, on a scale of 0 to 5, indicating their degree of semantic similarity.
+                <h4 class="short-explanation"><div class="date">November 4, 2022 - December 1, 2022</div>
+                    Natural Language Processing (NLP) task that predicts the attributes and relationships of words (entities) in a sentence</h4>
+                <img id="thumbnail" src="../files/project/RE.png">
+                <div id="long-explanation">
+                    <div id="explanation-paragraph">
+                        <strong>[Task Description] </strong><br>
+                        Given an input sentence along with subject_entity and object_entity, the system should produce an output that includes the predicted relation label (pred_label) from a set of 30 possible relation classes and the associated predicted probabilities (probs) for each of those 30 classes. <br>
+                        <img id="proj1-table" src="../files/project/proj2-table.png"><br>    
                     </div>
-                    <div class="dataset">
+                    <div id="explanation-paragraph">
+                        <strong>[Dataset] </strong><br>
+                        - number of train.csv: 32470 <br>
+                        - number of test_data.csv: 7765 (Using the label "blind=100" to represent the hidden/unknown label)
+                    </div>
+                    <div id="explanation-paragraph">
+                        <strong>[Process] </strong><br>
+                        EDA → Test Korean Pretrained Language Model → Data Augmentation → Data preprocess → Test Typed Entity Marker / Tokenization/Auxiliary loss model/K-Fold Cross Validation/TAPT → Ensemble
 
                     </div>
+                    <div id="explanation-paragraph">
+                        <strong>[Model Result] </strong><br>
+                        Evaluation using Micro F1 and Auprc<br>
+                        - Micro F1:75.6467, Auprc:79.0515 in the Public board<br>
+                        - Micro F1:74.4309, Auprc:82.7347 in the Private board<br>
+
+                    </div>
+                </div>
+                <div>
+                    <a class="buttons" href="https://github.com/jjeongah/Relation_Extraction" target="_blank">Github</a>
+                </div>
             </div>
         </div>
 
+        <!--🔥Media Section🔥-->
+        <div id="media-section">    
+            <a href="mailto:jeongahs2@g.skku.edu" id="personal-link">
+                <img src="../files/email.png" id="icon-img" alt="Email">
+                <h4>Mail</h4>
+            </a> 
+            <a href="https://github.com/jjeongah"  id="personal-link">
+                <img src="../files/github.png" id="icon-img" alt="Email">
+                <h4>GitHub</h4>
+            </a> 
+            <a href="https://www.linkedin.com/in/jeongah-jasmine-lee/" id="personal-link">
+                <img src="../files/linkedin.png" id="icon-img" alt="Email"> 
+                <h4>LinkedIn</h4>
+            </a>
+        </div>
 
         <div class="copyright-bar">
             <div>&copy; 2023 Jeongah Lee. All Rights Reserved.</div>
