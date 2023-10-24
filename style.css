@@ -218,7 +218,7 @@ img {
 }
 
 /* 🔥 [Projects page] Projects content Section🔥🔥🔥 */
-.projects-main-content {
+.projects-grid {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
@@ -227,22 +227,23 @@ img {
     margin-left: 5%;
 }
 
+.project-title {
+    margin-top: 5%;
+    font-weight: bold; 
+    color: #3a4487;
+    align-items: center;
+    text-align: center;
+    height: 15%;
+}
+
 .project {
     border: none; /* Remove the border */
     margin: 5px;
     padding: 10px;
-    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
     transition: box-shadow 0.3s; /* Add a smooth transition for the box shadow */
     height:400px;
     width: 95%;
-}
-
-.project-title {
-    display: flex;
-    align-items: center;
-    height: 30%;
-    color: #3a4487;
 }
 
 .project:hover {
@@ -251,14 +252,7 @@ img {
 
 
 .project img {
-    max-width: 100%;
     height: auto;
-}
-
-.project-title {
-    font-weight: 1000; 
-    color: #3a4487;
-    text-align: center;
 }
 
 
