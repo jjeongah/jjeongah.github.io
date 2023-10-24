@@ -235,6 +235,7 @@ img {
 }
 .project-title {
     font-weight: bold; 
+    font-size: 15px;
     color: #3a4487;
     text-align: center;
     height: 15%;
@@ -255,8 +256,8 @@ img {
 }
 
 .project img {
-    height: auto;
-    max-height: 40%; /* Set a maximum height for the image */
+    max-height: 30%;
+    max-height: 30%; /* Set a maximum height for the image */
 }
 
 .project-description {

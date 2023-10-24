@@ -57,10 +57,13 @@ header ul li a {
 }
 
 #thumbnail {
-    height: 100px;
+    height: 200px;
 }
 
 #long-explanation{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 50px;
 }
 
