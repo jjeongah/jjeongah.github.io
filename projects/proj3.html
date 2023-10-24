@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="project_style.css">
+    <!--Head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Jeongah Lee</title>
+    </head>
+
+    <!--Body-->
+    <body>
+        <!--🔥Menu Bar Section🔥-->
+        <header id="menu-bar">
+                <ul style="text-align: right;">
+                    <li><a href="#" onclick="showAbout()">About</a></li>
+                    <li><a href="#" onclick="showPublications()">Publications</a></li>
+                    <li><a href="#" onclick="showProjects()">Projects</a></li>
+                    <li><a href="#" onclick="showCV()">CV</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <h1 id="title-name">Open Domain Question Answering(ODQA)</h1>
+                <h4 class="short-explanation"><div class="date">November 19, 2022 - January 5, 2023</div>
+                    Model that answers questions based on world knowledge when no paragraph is given</h4>
+                <img id="thumbnail" src="../files/project/ODQA.png">
+                <div id="long-explanation">
+                    <div id="explanation-paragraph">
+                        <strong>[Task Description] </strong><br>
+                        - ODQA is an NLP task that answers questions based on world knowledge when no paragraph is given.<br>
+                        - This model consists of a "retriever" step that finds relevant documents and a "reader" step that finds appropriate answers among those documents.
+
+                        
+                    </div>
+                    <div id="explanation-paragraph">
+                        <strong>[Dataset] </strong><br>
+                        For the MRC (Machine Reading Comprehension) data, our team utilized the datasets library provided by HuggingFace. <br>
+                    </div>
+                    <div id="explanation-paragraph">
+                        <strong>[Process] </strong><br>
+                        - EDA → Data Augmentation <br>
+                        - Retriever: Sparse(TF-IDF)/Dense Retriever →Hybrid Retriever(BM25) → FAISS <br>
+                        - Reader: TAPT, Salient Span Masking(SSM), test T5 model  <br>
+                        - Postprocessing → Ensemble
+
+                    </div>
+                    <div id="explanation-paragraph">
+                        <strong>[Model Result] </strong><br>
+                        Evaluation using Exact Match(EM) and F1 score<br>
+                        - EM:59.58, F1:79.1 in the Public board<br>
+                        - EM:57.78, F1:70.4 in the Private board
+
+
+                    </div>
+                </div>
+                <div>
+                    <a class="buttons" href="https://github.com/jjeongah/Open_Domain_Question_Answering" target="_blank">Github</a>
+                </div>
+            </div>
+        </div>
+
+        <!--🔥Media Section🔥-->
+        <div id="media-section">    
+            <a href="mailto:jeongahs2@g.skku.edu" id="personal-link">
+                <img src="../files/email.png" id="icon-img" alt="Email">
+                <h4>Mail</h4>
+            </a> 
+            <a href="https://github.com/jjeongah"  id="personal-link">
+                <img src="../files/github.png" id="icon-img" alt="Email">
+                <h4>GitHub</h4>
+            </a> 
+            <a href="https://www.linkedin.com/in/jeongah-jasmine-lee/" id="personal-link">
+                <img src="../files/linkedin.png" id="icon-img" alt="Email"> 
+                <h4>LinkedIn</h4>
+            </a>
+        </div>
+
+        <div class="copyright-bar">
+            <div>&copy; 2023 Jeongah Lee. All Rights Reserved.</div>
+        </div>
+        </main> <!--Main page done-->
+    
+        
+
+        <script src="../script.js"></script>
+</body>
+</html>
