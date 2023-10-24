@@ -52,15 +52,19 @@ header ul li a {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
     grid-gap: 20px; /* Adjust the gap as needed */
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .project {
     border: none; /* Remove the border */
+    margin: 10px;
     padding: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
     transition: box-shadow 0.3s; /* Add a smooth transition for the box shadow */
-    height:400px;
+    height:90%;
+    width: 70%;
 }
 
 .project:hover {
@@ -69,7 +73,7 @@ header ul li a {
 
 
 .project img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -77,21 +81,12 @@ header ul li a {
     font-weight: bold;
 }
 
-.project-details {
-    display: none; /* Hide the detailed information by default */
-}
 
 /* Style for hover effect */
 .project:hover {
     background-color: #e0e0e0; /* Change the background color on hover */
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .main-content {
-        grid-template-columns: 1fr; /* Change to a single column on smaller screens */
-    }
-}
 
 
 
