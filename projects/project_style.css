@@ -10,20 +10,11 @@ body {
 }
 
 /* 🔥Menu Bar Section🔥 */
-
 #menu-bar {
     border-bottom: 0.1px solid #d8dae6; /* Add a 1px solid black border at the bottom */
     padding-bottom: 10px;
     width: 100%;
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Push items to opposite ends of the container */
-    align-items: center; /* Vertically align items in the middle */
 }
-
-#menu-bar h2 {
-    margin: 0; /* Remove default margin */
-}
-
 
 header {
     padding-top: 1%;
@@ -45,6 +36,7 @@ header ul li a {
     color: #000; /* Set the desired link color (e.g., black) */
     text-decoration: none; /* Remove underlines from the links */
 }
+
 
 /* 🔥🔥🔥Main content Section🔥🔥🔥 */
 .main-content {

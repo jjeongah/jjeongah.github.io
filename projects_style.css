@@ -46,6 +46,7 @@ header ul li a {
     text-decoration: none; /* Remove underlines from the links */
 }
 
+
 /* 🔥🔥🔥Projects content Section🔥🔥🔥 */
 .main-content {
     text-align: center;
@@ -73,7 +74,7 @@ header ul li a {
 
 
 .project img {
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
 }
 
