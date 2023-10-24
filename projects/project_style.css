@@ -6,6 +6,12 @@ body {
     overflow-y: auto;
 }
 
+#link {
+    color: #4563b0; 
+    text-decoration: none;
+}
+
+
 /* 🔥Menu Bar Section🔥 */
 #menu-bar {
     border-bottom: 0.1px solid #d8dae6; /* Add a 1px solid black border at the bottom */
@@ -57,14 +63,29 @@ header ul li a {
 }
 
 #thumbnail {
-    height: 200px;
+    height: 300px;
 }
+
+/* 🔥Each pages🔥 */
 
 #long-explanation{
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 50px;
+}
+
+#explanation-paragraph {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.date{
+    color: grey;
+}
+
+#table {
+    width: 80%;
 }
 
 .buttons {
@@ -82,6 +103,8 @@ header ul li a {
     background-color: #c5c6d1; /* Change the background color on hover */
     color: #edeffa; /* Change the text color on hover */
 }
+
+
 
 /* 🔥[Common] Media Section🔥 */
 #media-section {

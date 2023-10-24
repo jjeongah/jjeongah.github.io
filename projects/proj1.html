@@ -28,13 +28,33 @@
 
         <div class="main-content">
             <h1 id="title-name">Semantic Text Similarity(STS)</h1>
-                <h4 class="short-explanation">Natural Language Processing (NLP) task that measures the similarity between two sentences</h4>
+                <h4 class="short-explanation"><div class="date">Oct 24, 2022 - Nov 3, 2022</div>Natural Language Processing (NLP) task that measures the similarity between two sentences</h4>
                 <img id="thumbnail" src="../files/project/STS.png">
                 <div id="long-explanation">
-                    This project handles the STS task, which provides a linear numerical measure of similarity for multiple sentences.<br>
-                    Two sentences are input, and a model is constructed to measure how semantically similar these pairs of sentences are, on a scale of 0 to 5, indicating their degree of semantic similarity.
+                    <div id="explanation-paragraph">
+                        <strong>[Task Description] </strong><br>
+                        This project handles the STS task, which provides a linear numerical measure of similarity for multiple sentences.<br>
+                        Two sentences are input, and a model is constructed to measure how semantically similar these pairs of sentences are, on a scale of 0 to 5, indicating their degree of semantic similarity.    
+                    </div>
+                    <div id="explanation-paragraph">
+                        <strong>[Dataset] </strong><br>
+                        <img id="table" src="../files/project/proj1.png"><br>
+                        The data consists of the following sources: Korean Citizen Petition board title data, Sentiment Movie Corpus collected by 
+                        <a href="https://www.navercorp.com/en/naver/company" target="_blank" id="link">Naver</a>,
+                        and Slack data from <a href="https://en.upstage.ai/" target="_blank" id="link">Upstage</a>.
+                    </div>
+                    <div id="explanation-paragraph">
+                        <strong>[Process] </strong><br>
+                        EDA → Test Korean Pretrained Language Model → Data Augmentation → Tokenization / Hyper parameter tuning / Metric Learning→ Ensemble
+                    </div>
+                    <div id="explanation-paragraph">
+                        <strong>[Model Result] </strong><br>
+                        Evaluation using Pearson Correlation Coefficient(PCC) <br>
+                        - 0.9220 in the Public board<br>
+                        - 0.9175 in the Private board
+                    </div>
                 </div>
-                <div class = "github-button">
+                <div>
                     <a class="buttons" href="https://github.com/jjeongah/Semantic_Text_Similarity" target="_blank">Github</a>
                 </div>
             </div>
