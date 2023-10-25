@@ -138,6 +138,21 @@ header ul li a {
         list-style-type: decimal; /* 숫자 목록 스타일 */
       }
 
+.proj6-thumbnail {
+    text-align: center; /* Center-align the content within the div */
+}
+
+.proj6-img1 {
+    width: 80%;
+}
+
+.thumbnail-comment {
+    margin-top: 10px; /* Adjust the margin to control the space between the image and the comment */
+    font-size: 14px; /* Set the font size for the comment */
+    color: #555; /* Set the text color for the comment */
+}
+    
+
 /* 🔥[Common] Media Section🔥 */
 #media-section {
     position: fixed;
