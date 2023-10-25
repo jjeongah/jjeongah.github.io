@@ -199,6 +199,15 @@ img {
     line-height: 1.5;
 }
 
+.publication-thumbnail {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.publication-img {
+    width: 80%;
+}
 
 .abstract {
     margin: 20px;
