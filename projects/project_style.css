@@ -68,14 +68,7 @@ header ul li a {
 
 /* 🔥Each pages🔥 */
 
-hr {
-    border: none; /* 테두리 제거 */
-    border-top: 1px solid #ccc; /* 상단 경계선 두께 및 색상 설정 */
-    width: 80%; /* 가로 길이 조절 (원하는 길이에 맞게 조정) */
-    margin: 20px auto; /* 위아래 여백 및 가운데 정렬 */
-  }
   
-
 #long-explanation{
     width: 60%;
     margin-left: 20%;
@@ -93,7 +86,7 @@ hr {
 }
 
 #proj1-table {
-    width: 300px;
+    width: 500px;
 }
 
 .buttons {
@@ -119,13 +112,13 @@ hr {
 }
 
 .proj4-img1 {
-    width: 350px;
+    width: 400px;
 }
 .proj4-img2 {
-    width: 350px;
+    width: 450px;
 }
 .proj4-content {
-    padding-left: 10%; /* 왼쪽으로 20px 들여쓰기 적용 */
+    padding-left: 20%; /* 왼쪽으로 20px 들여쓰기 적용 */
   }
   
   ol {
