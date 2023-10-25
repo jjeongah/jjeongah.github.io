@@ -132,7 +132,10 @@ header ul li a {
     margin-top: 10px; /* 항목 간 간격 설정 */
   }
 
-
+.proj5-content 
+    li {
+        list-style-type: decimal; /* 숫자 목록 스타일 */
+      }
 
 /* 🔥[Common] Media Section🔥 */
 #media-section {
