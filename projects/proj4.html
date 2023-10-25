@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="project_style.css">
+    <!--Head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Jeongah Lee</title>
+    </head>
+
+    <!--Body-->
+    <body>
+        <!--🔥Menu Bar Section🔥-->
+        <header id="menu-bar">
+                <ul style="text-align: right;">
+                    <li><a href="#" onclick="showAbout()">About</a></li>
+                    <li><a href="#" onclick="showPublications()">Publications</a></li>
+                    <li><a href="#" onclick="showProjects()">Projects</a></li>
+                    <li><a href="#" onclick="showCV()">CV</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <h1 id="title-name">BTS Twitter Chatbot</h1>
+                <h4 class="short-explanation"><div class="date">January 9, 2023 - February 9, 2023</div>
+                    Twitter-based chatbot service for BTS fans, offering interactive Q&A and engaging chitchat experiences</h4>
+                <img id="thumbnail" src="../files/project/Chatbot.png">
+                <div id="long-explanation">
+                    <div id="explanation-paragraph">
+                        <strong>[Project Description] </strong><br>
+                        Let's fangirl together! ArmyBot is a chatbot service that allows you to have various conversations like a typical BTS fan friend on Twitter. Just tweet <strong>@armybot_13</strong> with your questions or any chit chats, and ArmyBot will reply to you.
+                        
+                    </div>
+                    <div id="explanation-paragraph">
+                        <strong>[Dataset] </strong><br>
+                            1. For Generation Model <br>
+                            (1) Pretraining(domain-adaptive) data<br>
+                                 - AI Hub Entertainment News: 3,144 articles, 10.67MB<br>
+                                 - Naver News BTS-related articles: 1,337 articles, 4.85MB<br>
+                            (2) Fine-tuning<br>
+                            - Daily Conversation and Comfort Chatbot Data: 962,681 pairs of questions and answers, 108.43MB<br>
+                            - Naver Jisikin BTS category: 7,785 questions and answers, 8.70MB<br>
+                            - TheQoo BTS category posts/comments: 13,709 posts, 3.53MB<br>
+                            - Twitter BTS fan tweets/replies: 8,106 tweets and replies, 1.45MB<br>
+                            
+                            2. For Spam-filtering Model Fine-tuning<br>
+                            - Korean-hate-speech: 7,896 sentences<br>
+                            - KOLD: 40,429 sentences<br>
+                            - Korean_unsmile_data: 7,896 sentences<br>
+                            - Curse-detection-data: 6,154 sentences
+                    </div>
+                    <div id="explanation-paragraph">
+                        <strong>[System Architecture] </strong><br>
+                        <div class="proj4-thumbnail">
+                            <img class="proj4-img" src="../files/project/chatbot-fig1.png">
+                        </div>
+                        <div>
+                            1. User tags the bot account and writes a tweet.<br>
+                            2. Spam tweet filtering:<br>
+                            - If a tweet is determined to be malicious, a predefined response is returned.<br>
+                            3. Intent keyword matching and BM25-based Elastic Search:<br>
+                            - If the retrieved reply has a BM25 score above a threshold and matches the intent keywords, the reply is post-processed and returned to the user.<br>
+                            - If the above two conditions are not satisfied, the input is passed to the Generation model, and the generated result is filtered for offensive expressions before being returned to the user.<br>
+                            4. Input/output analysis and other information are stored in MongoDB for analysis.
+                        </div>
+                    </div>
+                    <div id="explanation-paragraph">
+                        <strong>[Modeling] </strong><br>
+                        Generation model <br>
+                        1. paust/pko-t5-base based pretraining + finetuning<br>
+                        2. Pretraining: Add BTS-related tokens<br>
+                        - Vocab size: 50,383<br>
+                        - "BTS", "bts", "RM", "rm", "Jin", "Kim Seokjin", "Seokjin", "Kim Namjoon", "Namjoon", "Suga", "Min Yoongi", "Yoongi", "J-Hope", "Jung Hoseok", "Jimin", "Park Jimin", "V", "Kim Taehyung", "Taehyung", "V", "Jungkook", "Jeon Jungkook", "ARMY", "Big Hit", "HYBE", "ARMY", "I purple you"<br>
+                        3. Finetuning<br>
+                        - chitchat conversation and comforting chatbot data<br>
+                        - BTS-related Naver Jisik-in data<br>
+                        - Theqoo BTS category posts/comments and Twitter BTS fan tweets/replies data<br>
+                        - Model size : 1.1GB<br>
+                        - Number of trainable parameters : 275,617,536<br>
+
+                        Retreiver model<br>
+                        - Elastic Search with BM25<br>
+
+                        Spam filtering model<br>
+                        - klue/bert-base based finetuning<br>
+
+
+                    </div>
+                </div>
+                <div>
+                    <a class="buttons" href="https://github.com/jjeongah/Open_Domain_Question_Answering" target="_blank">Github</a>
+                </div>
+            </div>
+        </div>
+
+        <!--🔥Media Section🔥-->
+        <div id="media-section">    
+            <a href="mailto:jeongahs2@g.skku.edu" id="personal-link">
+                <img src="../files/email.png" id="icon-img" alt="Email">
+                <h4>Mail</h4>
+            </a> 
+            <a href="https://github.com/jjeongah"  id="personal-link">
+                <img src="../files/github.png" id="icon-img" alt="Email">
+                <h4>GitHub</h4>
+            </a> 
+            <a href="https://www.linkedin.com/in/jeongah-jasmine-lee/" id="personal-link">
+                <img src="../files/linkedin.png" id="icon-img" alt="Email"> 
+                <h4>LinkedIn</h4>
+            </a>
+        </div>
+
+        <div class="copyright-bar">
+            <div>&copy; 2023 Jeongah Lee. All Rights Reserved.</div>
+        </div>
+        </main> <!--Main page done-->
+    
+        
+
+        <script src="../script.js"></script>
+</body>
+</html>

@@ -104,6 +104,16 @@ header ul li a {
     color: #edeffa; /* Change the text color on hover */
 }
 
+.proj4-thumbnail {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.proj4-img {
+    width: 300px;
+}
+
 
 
 /* 🔥[Common] Media Section🔥 */
