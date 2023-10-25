@@ -34,62 +34,61 @@
                 <div id="long-explanation">
                     <div id="explanation-paragraph">
                         <strong>[Project Description] </strong><br>
-                        Let's fangirl together! ArmyBot is a chatbot service that allows you to have various conversations like a typical BTS fan friend on Twitter. Just tweet <strong>@armybot_13</strong> with your questions or any chit chats, and ArmyBot will reply to you.
+                        Let's fangirl together! ArmyBot is a chatbot service that allows you to have various conversations like a typical BTS fan friend on Twitter. <br>
+                        Just tweet <strong>@armybot_13</strong> with your questions or any chit chats, and ArmyBot will reply to you.
                         
                     </div>
                     <div id="explanation-paragraph">
                         <strong>[Dataset] </strong><br>
-                            1. For Generation Model <br>
-                            (1) Pretraining(domain-adaptive) data<br>
-                                 - AI Hub Entertainment News: 3,144 articles, 10.67MB<br>
-                                 - Naver News BTS-related articles: 1,337 articles, 4.85MB<br>
-                            (2) Fine-tuning<br>
-                            - Daily Conversation and Comfort Chatbot Data: 962,681 pairs of questions and answers, 108.43MB<br>
-                            - Naver Jisikin BTS category: 7,785 questions and answers, 8.70MB<br>
-                            - TheQoo BTS category posts/comments: 13,709 posts, 3.53MB<br>
-                            - Twitter BTS fan tweets/replies: 8,106 tweets and replies, 1.45MB<br>
-                            
-                            2. For Spam-filtering Model Fine-tuning<br>
-                            - Korean-hate-speech: 7,896 sentences<br>
-                            - KOLD: 40,429 sentences<br>
-                            - Korean_unsmile_data: 7,896 sentences<br>
-                            - Curse-detection-data: 6,154 sentences
+                        Data is collected to train <strong>Generation Model</strong> and <strong>Spam Filtering Model</strong>. <br>
+                        <div class="proj4-thumbnail">
+                            <img class="proj4-img1" src="../files/project/chatbot-fig2.png">
+                        </div>
                     </div>
                     <div id="explanation-paragraph">
                         <strong>[System Architecture] </strong><br>
                         <div class="proj4-thumbnail">
-                            <img class="proj4-img" src="../files/project/chatbot-fig1.png">
+                            <img class="proj4-img2" src="../files/project/chatbot-fig1.png">
                         </div>
-                        <div>
-                            1. User tags the bot account and writes a tweet.<br>
-                            2. Spam tweet filtering:<br>
-                            - If a tweet is determined to be malicious, a predefined response is returned.<br>
-                            3. Intent keyword matching and BM25-based Elastic Search:<br>
-                            - If the retrieved reply has a BM25 score above a threshold and matches the intent keywords, the reply is post-processed and returned to the user.<br>
-                            - If the above two conditions are not satisfied, the input is passed to the Generation model, and the generated result is filtered for offensive expressions before being returned to the user.<br>
-                            4. Input/output analysis and other information are stored in MongoDB for analysis.
-                        </div>
+                        <div class="proj4-content" style="text-align: left;">
+                            <ol>
+                              <li>User tags the bot account and writes a tweet.</li>
+                              <li>Spam tweet filtering:
+                                <ul>
+                                  <li>If a tweet is determined to be malicious, a predefined response is returned.</li>
+                                </ul>
+                              </li>
+                              <li>Intent keyword matching and BM25-based Elastic Search:
+                                <ul>
+                                  <li>If the retrieved reply has a BM25 score above a threshold and matches the intent keywords, the reply is post-processed and returned to the user.</li>
+                                  <li>If the above two conditions are not satisfied, the input is passed to the Generation model, and the generated result is filtered for offensive expressions before being returned to the user.</li>
+                                </ul>
+                              </li>
+                              <li>Input/output analysis and other information are stored in MongoDB for analysis.</li>
+                            </ol>
+                          </div>
+                          
                     </div>
                     <div id="explanation-paragraph">
                         <strong>[Modeling] </strong><br>
-                        Generation model <br>
-                        1. paust/pko-t5-base based pretraining + finetuning<br>
-                        2. Pretraining: Add BTS-related tokens<br>
-                        - Vocab size: 50,383<br>
-                        - "BTS", "bts", "RM", "rm", "Jin", "Kim Seokjin", "Seokjin", "Kim Namjoon", "Namjoon", "Suga", "Min Yoongi", "Yoongi", "J-Hope", "Jung Hoseok", "Jimin", "Park Jimin", "V", "Kim Taehyung", "Taehyung", "V", "Jungkook", "Jeon Jungkook", "ARMY", "Big Hit", "HYBE", "ARMY", "I purple you"<br>
-                        3. Finetuning<br>
-                        - chitchat conversation and comforting chatbot data<br>
-                        - BTS-related Naver Jisik-in data<br>
-                        - Theqoo BTS category posts/comments and Twitter BTS fan tweets/replies data<br>
-                        - Model size : 1.1GB<br>
-                        - Number of trainable parameters : 275,617,536<br>
-
-                        Retreiver model<br>
-                        - Elastic Search with BM25<br>
-
-                        Spam filtering model<br>
-                        - klue/bert-base based finetuning<br>
-
+                        <div class="proj4-content" style="text-align: left;">
+                            <ol>
+                                <li>Generation model</li>
+                                <ul>
+                                    <li>It is pre-trained and fin-tuned based on paust/pko-t5-base.</li>
+                                    <li>For pre-training, BTS-related tokens are added.</li>
+                                    <li>Model size is 1.1GB and the number of trainable parameters is 275,617,536.</li>
+                                </ul>
+                                <li>Retreiver model</li>
+                                <ul>
+                                    <li>Elastic Search with BM25 is used.</li>
+                                </ul>
+                                <li>Spam filtering model</li>
+                                <ul>
+                                    <li>klue/bert-base based model is fine-tuned.</li>
+                                </ul> 
+                            </ol>
+                        </div>
 
                     </div>
                 </div>

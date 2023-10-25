@@ -110,9 +110,27 @@ header ul li a {
     align-items: center;
 }
 
-.proj4-img {
-    width: 300px;
+.proj4-img1 {
+    width: 350px;
 }
+.proj4-img2 {
+    width: 350px;
+}
+.proj4-content {
+    padding-left: 20px; /* 왼쪽으로 20px 들여쓰기 적용 */
+  }
+  
+  ol {
+    list-style-type: decimal; /* 숫자 목록 스타일 */
+  }
+  
+  ul {
+    list-style-type: disc; /* 원형 목록 스타일 */
+  }
+  
+  li {
+    margin-top: 10px; /* 항목 간 간격 설정 */
+  }
 
 
 
